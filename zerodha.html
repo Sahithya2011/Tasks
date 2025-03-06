@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zerodha</title>
+</head>
+<body>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                box-sizing: border-box;
+
+            }
+
+            nav {
+                width: 100%;
+                padding-top: 15px;
+                padding-bottom: 10px;
+                display: flex;
+                justify-content:center;
+                align-items: center;
+                border-bottom: 2px solid rgb(147, 147, 147);
+                padding: 10px 20px;
+            }
+
+            .logo {
+                width: auto;
+                height: 20px;
+                cursor:pointer ;
+                margin-left: 100px;
+            }
+
+            .menu1 {
+                width:auto;
+                height: 30px;
+                cursor: pointer;
+                margin-right: 200px;
+            }
+
+            nav ul {
+                flex: 1;
+                text-align: right;
+                margin-right: 60px;
+                gap: 20px;
+            }
+
+            nav ul li {
+                list-style-type: none;
+                margin: 20px;
+                display: inline-block;
+                font-size: 20px;
+            }
+
+            nav ul li a {
+                text-decoration: none;
+                position: relative;
+                color: black;
+                font-weight: lighter;
+                font-size: smaller;
+                padding: 10px;
+            }
+
+            /* nav ul li a::before {
+                width: 100%;
+                content: '';
+                height: 0px;
+                background-color: blue;
+                position: absolute;
+                left: 0;
+                bottom: -5px;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                z-index: -1;
+            } */
+
+            nav ul li a:hover::before {
+                height: 5px;
+            }
+
+            a:hover{
+                color:rgb(30, 133, 237);
+            }
+
+            .menu-main {
+                width: auto;
+                height: 400px;
+                position:relative;
+                top: 50px;
+                margin: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            h1 {
+                display: flex;
+                margin: auto;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                top: 55px;
+                font-size: 50px;
+                margin-bottom: 50px;
+            }
+
+            p {
+                font-size: 20px;
+                margin-bottom: 50px;
+                display: flex;
+                margin: auto;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                top: 50px;
+            }
+
+            .button {
+                display: flex;
+                margin: auto;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                border-radius: 4px;
+                background-color: rgb(30, 133, 237);
+                top: 80px;
+                padding: 10px 40px;
+                font-size: 20px;
+                font-weight: 700;
+                color: white;
+                border: none;
+                &:hover {
+                    background-color: rgb(24, 102, 193);
+                    transform: translateY(-3px);
+                }
+            }
+
+
+        </style>
+        <div>
+            <nav>
+                <img src="https://zerodha.com/static/images/logo.svg" alt="zero" width="150px" height="19px" class="logo"/>
+            <ul>
+                <li><a href="https://zerodha.com/open-account/">Signup</a></li>
+                <li><a href="https://zerodha.com/about/">About</a></li>
+                <li><a href="https://zerodha.com/products/">Product</a></li>
+                <li><a href="https://zerodha.com/charges/">Pricing</a></li>
+                <li><a href="https://support.zerodha.com/">Support</a></li>
+            </ul>
+            <img src="menu.png" class="menu1" alt="NA" />
+            </nav>
+            <img src="menu2.png" class="menu-main" alt="NA" /><br /><br/>
+            
+            <h1>
+                Invest in everything
+            </h1><br/>
+            <p>
+                Online platform to invest in stocks, derivatives, mutual funds, ETFs, bonds, and more.
+            </p>
+            <button class="button" onclick="window.open('https://zerodha.com/open-account/')">Sign up for free</button><br><br>
+        </div>
+</body>
+</html>
